@@ -15,7 +15,7 @@
       "importHelpers": true,
       "preserveConstEnums": true,
       "sourceMap": true,
-      "target": "es6",
+      "target": "es5",
       "lib": ["es6", "dom"],
       "allowJs": true,
       "skipLibCheck": true,
