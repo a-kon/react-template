@@ -49,9 +49,6 @@ module.exports = {
         'max-params': ['error', 5],
         'max-nested-callbacks': ['error', 5],
         'max-depth': ['error', 5],
-
-        // TODO: Enable it ASAP
-        // https://github.com/typescript-eslint/typescript-eslint/issues/2502#issuecomment-689595020
         'no-use-before-define': [
             'error',
             { functions: false, classes: true, variables: false },

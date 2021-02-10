@@ -38,6 +38,8 @@
     "webpack-notifier": "^1.13.0"
   },
   "dependencies": {
+    "history": "^5.0.0",
+    "inversify": "^5.0.5",
     "mobx": "^6.1.5",
     "mobx-react": "^7.1.0",
     "react": "^17.0.1",
