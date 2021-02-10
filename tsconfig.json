@@ -4,11 +4,11 @@
       "paths": {
         "src/*": [
           "./src/*"
-        ],
+        ]
       },
       "module": "esnext",
       "moduleResolution": "node",
-      "types": ["reflect-metadata"],
+      "types": ["reflect-metadata", "jest"],
       "noImplicitAny": true,
       "noUnusedLocals": false,
       "esModuleInterop": true,
@@ -34,7 +34,8 @@
       "./**/*.tsx"
     ],
     "exclude": [
+      "./**/*.spec.ts",
       "./cache",
       "./node_modules"
     ]
-  }
+}
