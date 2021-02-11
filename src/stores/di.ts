@@ -1,3 +1,4 @@
 export const di = {
-    example: Symbol.for('user'),
+    example: Symbol.for('example'),
+    example2: Symbol.for('example2'),
 };

@@ -10,7 +10,7 @@ declare module '*.jpeg' {
 
 declare module '*.png' {
     const src: string;
-    export default src;
+    export default string;
 }
 
 declare module '*.svg' {
