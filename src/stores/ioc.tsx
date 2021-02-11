@@ -10,9 +10,7 @@ type Props = {
 };
 
 export const InjectionContainerProvider: React.FC<Props> = (props) => {
-    const container = React.useMemo(() => ({ container: props.container }), [
-        props.container,
-    ]);
+    const container = React.useMemo(() => ({ container: props.container }), [props.container]);
 
     return (
         <InversifyContext.Provider value={container}>
