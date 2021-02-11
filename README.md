@@ -14,10 +14,14 @@
 
 ### Structure
 Everything that retated to the **general** application's view: styles, UI elements are placed in the `src/ui` directory.
-
-ui/styles - styles.
-
-ui/components - UI components.
+```
+src
+└── ui
+    ├── styles (styles)
+    │   └── normalize.module.css
+    └── ui (UI components)
+        └── Button
+```
 
 Main code placed in src directory. Code is splitted by domains with the following structure:
 ```
