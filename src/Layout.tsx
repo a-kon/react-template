@@ -6,7 +6,7 @@ import makeAsync from 'src/utility/makeAsync';
 import { container } from 'src/stores/store';
 import { InjectionContainerProvider } from 'src/stores/ioc';
 
-const Example = makeAsync(() => import('src/example/Example'));
+const Example = makeAsync(() => import('src/example/components/example/Example'));
 
 export const Layout: React.FC = () => (
     <BrowserRouter>
