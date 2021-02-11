@@ -1,7 +1,7 @@
-import { Container, interfaces } from 'inversify';
+import { Container } from 'inversify';
 import * as React from 'react';
 
-const InversifyContext = React.createContext<{ container: Container | null }>({
+export const InversifyContext = React.createContext<{ container: Container | null }>({
     container: null,
 });
 
@@ -18,15 +18,3 @@ export const InjectionContainerProvider: React.FC<Props> = (props) => {
         </InversifyContext.Provider>
     );
 };
-
-export function useInjection<T>(
-    identifier: interfaces.ServiceIdentifier<T>
-): T {
-    const { container } = React.useContext(InversifyContext);
-
-    if (!container) {
-        throw new Error();
-    }
-
-    return container.get<T>(identifier);
-}

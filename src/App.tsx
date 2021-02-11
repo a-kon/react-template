@@ -7,13 +7,13 @@ import reactDOM from 'react-dom';
 import 'src/ui/styles/variables.module.css';
 import 'src/ui/styles/typography.module.css';
 
-import { useAnalytics } from 'src/hooks/useAnalytics';
-import { useComponentDidMount } from 'src/hooks/lifecycles';
+import { useComponentDidMount } from 'src/common/hooks/lifecycles';
+import { getAnalytics } from 'src/ioc/selectors/getAnalytics';
 
 import { Layout } from './Layout';
 
 export const App: React.FC = () => {
-    const analytics = useAnalytics();
+    const analytics = getAnalytics();
 
     useComponentDidMount(() => analytics.track('App mounted'));
 

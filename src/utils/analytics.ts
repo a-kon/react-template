@@ -8,3 +8,5 @@ const analyticsTrack = (evName: string, payload?: AnalyticsPayload) => {
 export const analytics = {
     track: analyticsTrack,
 };
+
+export type Analytics = typeof analytics;
