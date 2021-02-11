@@ -6,7 +6,7 @@ import React, {
     lazy,
 } from 'react';
 
-import {ErrorWrap} from './ErrorWrap';
+import {ErrorWrap} from './components/ErrorWrap';
 
 const TEMPORARYErrorComponent = () => <h1>Unexpected error has occured! Refresh the page, please.</h1>;
 

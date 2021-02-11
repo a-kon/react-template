@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { BrowserRouter, Route, Router, Switch } from 'react-router-dom';
 
-import { history } from 'src/utility/history';
-import makeAsync from 'src/utility/makeAsync';
+import { history } from 'src/utils/history';
+import makeAsync from 'src/utils/makeAsync';
 import { container } from 'src/stores/store';
 import { InjectionContainerProvider } from 'src/stores/ioc';
 import { AnalyticsProvider } from 'src/utils/analytics/Provider';
