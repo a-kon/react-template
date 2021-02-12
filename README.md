@@ -19,7 +19,7 @@ src
 └── ui
     ├── styles (styles)
     │   └── normalize.module.css
-    └── ui (UI components)
+    └── components (UI components)
         └── Button
 ```
 
