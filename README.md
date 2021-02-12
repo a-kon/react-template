@@ -23,7 +23,7 @@ src
         └── Button
 ```
 
-The main code placed in `src` directory. The code is split to domains with the following structure:
+The main code placed in `src` directory. The code is split between domains with the following structure:
 ```
 domain
 ├── assets
