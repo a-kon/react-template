@@ -1,5 +1,10 @@
 ## React template
 
+### How to
+1. `npm i`
+2. `touch .env`
+3. `npm run dev`
+
 ### Dependencies
 **Routing:** React Router
 

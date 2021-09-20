@@ -1,8 +1,16 @@
-export const names = {
+export enum Names {
     // stores
-    example: Symbol.for('example'),
-    example2: Symbol.for('example2'),
+    example = 'example',
+    example2 = 'example2',
 
     // services
-    analytics: Symbol.for('analytics'),
-};
+    analytics = 'analytics',
+    api = 'api',
+    axios = 'axios',
+    config = 'config',
+    dayjs = 'dayjs',
+    history = 'history',
+    localStorage = 'localStorage',
+    navigator = 'navigator',
+    window = 'window',
+}

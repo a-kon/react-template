@@ -1,0 +1,22 @@
+:root {
+    --font-family: 'Manrope', sans-serif;
+    --font-weight: 500;
+
+    /* Size */
+    --text-regular: 14px;
+
+    /* Weight */
+    --extra-light: 200;
+    --light: 300;
+    --regular: 400;
+    --medium: 500;
+    --semi-bold: 600;
+    --bold: 700;
+    --extra-bold: 800;
+}
+
+body {
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    font-size: var(--text-regular);
+}

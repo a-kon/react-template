@@ -1,6 +1,6 @@
-import { Analytics } from 'src/utils/analytics';
+import {Analytics} from 'src/utils/analytics';
 
-import { container } from '../bindings';
-import { names } from '../names';
+import {container} from '../bindings';
+import {Names} from '../names';
 
-export const getAnalytics = () => container.get<Analytics>(names.analytics);
+export const getAnalytics = () => container.get<Analytics>(Names.analytics);

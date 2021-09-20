@@ -1,4 +1,4 @@
-import { Container } from 'inversify';
+import {Container} from 'inversify';
 import * as React from 'react';
 
 export const InversifyContext = React.createContext<{ container: Container | null }>({
@@ -10,7 +10,7 @@ type Props = {
 };
 
 export const InjectionContainerProvider: React.FC<Props> = (props) => {
-    const container = React.useMemo(() => ({ container: props.container }), [props.container]);
+    const container = React.useMemo(() => ({container: props.container}), [props.container]);
 
     return (
         <InversifyContext.Provider value={container}>

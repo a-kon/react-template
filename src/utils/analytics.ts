@@ -1,4 +1,5 @@
-type AnalyticsPayload = Record<string|number, any>;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type AnalyticsPayload = Record<string | number, any>;
 
 const analyticsTrack = (evName: string, payload?: AnalyticsPayload) => {
     // eslint-disable-next-line

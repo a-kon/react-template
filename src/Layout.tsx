@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { BrowserRouter, Route, Router, Switch } from 'react-router-dom';
+import {BrowserRouter, Route, Router, Switch} from 'react-router-dom';
 
-import { history } from 'src/utils/history';
+import {history} from 'src/utils/history';
 import makeAsync from 'src/utils/makeAsync';
-import { container } from 'src/ioc/bindings';
-import { InjectionContainerProvider } from 'src/ioc/Provider';
+import {container} from 'src/ioc/bindings';
+import {InjectionContainerProvider} from 'src/ioc/Provider';
 
 const Example = makeAsync(() => import('src/example/components/example/Example'));
 

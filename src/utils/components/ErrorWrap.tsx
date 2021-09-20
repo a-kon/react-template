@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 
 interface IProps {
     only?: string;
@@ -12,10 +12,10 @@ interface IState {
 
 export class ErrorWrap extends React.Component<IProps, IState> {
     static getDerivedStateFromError(error: Error) {
-        return { error };
+        return {error};
     }
 
-    state: IState = { error: null };
+    state: IState = {error: null};
 
     componentDidCatch(error: Error, info: React.ErrorInfo) {
         // TODO: use Sentry or smth
@@ -28,8 +28,8 @@ export class ErrorWrap extends React.Component<IProps, IState> {
     }
 
     render() {
-        const { error } = this.state;
-        const { fallback: Fallback, children } = this.props;
+        const {error} = this.state;
+        const {fallback: Fallback, children} = this.props;
 
         return error && this.catchError(error) ? (
             <Fallback error={error} />

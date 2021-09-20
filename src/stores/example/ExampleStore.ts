@@ -1,7 +1,7 @@
-import { makeObservable } from 'mobx';
-import { injectable, inject } from 'inversify';
+import {makeObservable} from 'mobx';
+import {injectable, inject} from 'inversify';
 
-import { AnotherExampleStore } from 'src/stores/anotherExampleStore/AnotherExampleStore';
+import {AnotherExampleStore} from 'src/stores/anotherExampleStore/AnotherExampleStore';
 
 @injectable()
 export class ExampleStore {

@@ -7,10 +7,10 @@ import reactDOM from 'react-dom';
 import 'src/ui/styles/variables.module.css';
 import 'src/ui/styles/typography.module.css';
 
-import { useComponentDidMount } from 'src/common/hooks/lifecycles';
-import { getAnalytics } from 'src/ioc/selectors/getAnalytics';
+import {useComponentDidMount} from 'src/common/hooks/lifecycles';
+import {getAnalytics} from 'src/ioc/selectors/getAnalytics';
 
-import { Layout } from './Layout';
+import {Layout} from './Layout';
 
 export const App: React.FC = () => {
     const analytics = getAnalytics();
